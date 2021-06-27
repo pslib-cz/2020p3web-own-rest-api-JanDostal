@@ -4,4 +4,5 @@
 ## Třídy
 Akce | Metoda | Endpoint | Výsledek
 ---- | ------ | -------- | --------
+Vytvořit novou třídu | POST | /api/classes + body | Created, Bad Request
 ## Studenti
