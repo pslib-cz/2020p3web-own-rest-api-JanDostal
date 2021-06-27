@@ -6,4 +6,5 @@ Akce | Metoda | Endpoint | Výsledek
 ---- | ------ | -------- | --------
 Vytvořit novou třídu | POST | /api/classes + body | Created, Bad Request
 Smazat třídu | DELETE | api/classes/{id} | Ok, Not found
+Upravit třídu | PUT | api/classes/{id}/[educationalStage][graduationYear][originYear][codeDesignation?]
 ## Studenti
