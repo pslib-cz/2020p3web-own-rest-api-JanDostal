@@ -22,5 +22,5 @@ Upravit studenta | PUT | api/students/{pin} + body | Ok, No content, Not found, 
 Získat studenta podle rodného čísla | GET | api/students/{pin} | Student - Ok, Not found
 Získat počet studentů dle jména v dané třídě podle id | GET | api/students[forename][id]/count | int - Ok, Not found, Bad request
 Získat seznam studentů, kterým už bylo 18 let, dle id třídy | GET | api/students{id}/adult | ICollection\<Student\> - Ok, No content, Not found
-Získat počet dívek a chlapců v dané třídě dle id třídy | GET | api/students{id}/numberOfGirlsAndBoys | object - Ok, No content, Not found
+Získat počet dívek a chlapců v dané třídě dle id třídy | GET | api/students{id}/numberOfGirlsAndBoys | object - Ok, Not found
 Získat seznam studentů v dané třídě dle id třídy | GET | api/students{id} | ICollection\<Student\> - Ok, No content, Not found
