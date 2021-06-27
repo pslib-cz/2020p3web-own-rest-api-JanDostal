@@ -2,4 +2,6 @@
 ## Schéma
 ![Konceptuální model](/IMG_20210622_144920.jpg)
 ## Třídy
+Akce | Metoda | Endpoint | Výsledek
+---- | ------ | -------- | --------
 ## Studenti
