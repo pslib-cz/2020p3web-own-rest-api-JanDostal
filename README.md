@@ -8,7 +8,7 @@ Akce | Metoda | Endpoint | Výsledek
 Vytvořit novou třídu | POST | api/classes + body | Created, Bad Request
 Smazat třídu | DELETE | api/classes/{id} | No content, Not found
 Upravit třídu | PUT | api/classes/{id} + body | Ok, Not found, Bad request
-Získat třídu podle id | GET | api/classes/{id} | Class - Ok, Not found, Bad request
+Získat třídu podle id | GET | api/classes/{id} | Trida - Ok, Not found, Bad request
 Získat seznam tříd podle parametrů | GET | api/classes[grade?][educationLevel?][codeDesignation?] | ICollection\<Trida\> - Ok, No content, Bad request
 Získat seznam tříd, které už byly ukončeny, podle úrovně vzdělání | GET | api/classes/ended{educationLevel} | ICollection\<Trida\> - Ok, No content, Bad request
 Získat počet studentů v třídě dle id třídy | GET | api/classes/{id}/students/count | int - Ok, Not found, Bad request
