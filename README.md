@@ -16,7 +16,8 @@ Získat seznam studentů, kterým už bylo 18 let, dle id třídy | GET | api/Cl
 Získat seznam studentů v dané třídě dle id třídy | GET | api/Classes/{id}/Students | ICollection\<Student\> - Ok, No content, Not found
 
 ####POST metoda ukázka
-```{
+```
+{
   "kodoveOznaceni": "P",
   "datumVzniku": "2018-09-03T18:29:32.032Z",
   "datumUkonceni": "2022-06-30T18:29:32.032Z",
