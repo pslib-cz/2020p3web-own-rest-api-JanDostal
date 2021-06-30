@@ -13,7 +13,7 @@ Získat seznam tříd podle parametrů | GET | api/classes[grade?][educationLeve
 Získat seznam tříd, které už byly ukončeny, podle úrovně vzdělání | GET | api/classes/ended{educationLevel} | ICollection\<Trida\> - Ok, No content, Bad request
 Získat počet studentů v třídě dle id třídy | GET | api/classes/{id}/students/count | int - Ok, Not found, Bad request
 Získat seznam studentů, kterým už bylo 18 let, dle id třídy | GET | api/classes/{id}/students/adult | ICollection\<Student\> - Ok, No content, Not found, Bad request
-Získat seznam studentů v dané třídě dle id třídy | GET | api/classes/{id}/students | ICollection\<Student\> - Ok, No content, Not found
+Získat seznam studentů v dané třídě dle id třídy | GET | api/classes/{id}/students | ICollection\<Student\> - Ok, No content, Not found, Bad request
 
 #### POST metoda ukázka
 ```
