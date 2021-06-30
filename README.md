@@ -10,10 +10,10 @@ Smazat třídu | DELETE | api/classes/{id} | No content, Not found, Bad request
 Upravit třídu | PUT | api/classes/{id} + body | Ok, No content, Not found, Bad request
 Získat třídu podle id | GET | api/classes/{id} | Trida - Ok, Not found, Bad request
 Získat seznam tříd podle parametrů | GET | api/classes[grade?][educationLevel?][codeDesignation?] | ICollection\<Trida\> - Ok, No content, Bad request
-Získat seznam tříd, které už byly ukončeny, podle úrovně vzdělání | GET | api/classes/ended{educationLevel} | ICollection\<Trida\> - Ok, No content, Bad request
+Získat seznam tříd, které už byly ukončeny, podle úrovně vzdělání | GET | api/classes/ended{educationLevel} | List\<Trida\> - Ok, No content, Bad request
 Získat počet studentů v třídě dle id třídy | GET | api/classes/{id}/students/count | int - Ok, Not found, Bad request
-Získat seznam studentů, kterým už bylo 18 let, dle id třídy | GET | api/classes/{id}/students/adult | ICollection\<Student\> - Ok, No content, Not found, Bad request
-Získat seznam studentů v dané třídě dle id třídy | GET | api/classes/{id}/students | ICollection\<Student\> - Ok, No content, Not found, Bad request
+Získat seznam studentů, kterým už bylo 18 let, dle id třídy | GET | api/classes/{id}/students/adult | List\<Student\> - Ok, No content, Not found, Bad request
+Získat seznam studentů v dané třídě dle id třídy | GET | api/classes/{id}/students | List\<Student\> - Ok, No content, Not found, Bad request
 
 #### POST metoda ukázka
 ```
