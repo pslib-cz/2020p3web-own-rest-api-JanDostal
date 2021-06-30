@@ -35,16 +35,6 @@ Získat seznam studentů v dané třídě dle id třídy | GET | api/Classes/{id
 }
 ```
 
-#### DELETE metoda ukázka
-```
-{
-  "kodoveOznaceni": "S",
-  "datumVzniku": "2019-09-03T18:29:32.032Z",
-  "datumUkonceni": "2023-06-30T18:29:32.032Z",
-  "urovenVzdelani": 3
-}
-```
-
 ### Studenti
 Akce | Metoda | Endpoint | Výsledek
 ---- | ------ | -------- | --------
