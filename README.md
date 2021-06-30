@@ -42,7 +42,7 @@ Vytvořit nového studenta | POST | api/students + body | Created, Bad Request
 Smazat studenta | DELETE | api/students/{pin} | No content, Not found
 Upravit studenta | PUT | api/students/{pin} + body | Ok, Not found, Bad request
 Získat studenta podle rodného čísla | GET | api/students/{pin} | Student - Ok, Not found, Bad request
-Získat studenty podle parametrů | GET | api/students[age?][gender?] | ICollection\<Student\> - Ok, No content, Bad request
+Získat studenty podle parametrů | GET | api/students[age?][gender?] | List\<Student\> - Ok, No content, Bad request
 
 #### POST metoda ukázka
 ```
