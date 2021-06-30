@@ -6,7 +6,7 @@
 Akce | Metoda | Endpoint | Výsledek
 ---- | ------ | -------- | --------
 Vytvořit novou třídu | POST | api/classes + body | Created, Bad Request
-Smazat třídu | DELETE | api/classes/{id} | No content, Not found
+Smazat třídu | DELETE | api/classes/{id} | No content, Not found, Bad request
 Upravit třídu | PUT | api/classes/{id} + body | Ok, No content, Not found, Bad request
 Získat třídu podle id | GET | api/classes/{id} | Trida - Ok, Not found, Bad request
 Získat seznam tříd podle parametrů | GET | api/classes[grade?][educationLevel?][codeDesignation?] | ICollection\<Trida\> - Ok, No content, Bad request
