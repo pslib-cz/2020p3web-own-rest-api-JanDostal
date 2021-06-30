@@ -17,7 +17,7 @@ Získat seznam studentů v dané třídě dle id třídy | GET | api/Classes/{id
 ### Studenti
 Akce | Metoda | Endpoint | Výsledek
 ---- | ------ | -------- | --------
-Vytvořit nového studenta | POST |/api/Students + body | Created, Bad Request
+Vytvořit nového studenta | POST | api/Students + body | Created, Bad Request
 Smazat studenta | DELETE | api/Students/{pin} | No content, Not found
 Upravit studenta | PUT | api/Students/{pin} + body | Ok, Not found, Bad request
 Získat studenta podle rodného čísla | GET | api/Students/{pin} | Student - Ok, Not found
