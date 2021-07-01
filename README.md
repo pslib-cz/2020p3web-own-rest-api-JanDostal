@@ -6,14 +6,14 @@
 Akce | Metoda | Endpoint | Výsledek
 ---- | ------ | -------- | --------
 Vytvořit novou třídu | POST | api/classes + body | Created, Bad Request
-Smazat třídu | DELETE | api/classes/{id} | No content, Not found, Bad request
-Upravit třídu | PUT | api/classes/{id} + body | Ok, No content, Not found, Bad request
-Získat třídu podle id | GET | api/classes/{id} | Trida - Ok, Not found, Bad request
+Smazat třídu | DELETE | api/classes/{classId} | No content, Not found, Bad request
+Upravit třídu | PUT | api/classes/{classId} + body | Ok, No content, Not found, Bad request
+Získat třídu podle id | GET | api/classes/{classId} | Trida - Ok, Not found, Bad request
 Získat seznam tříd podle parametrů | GET | api/classes[grade?][educationLevel?][codeDesignation?] | List\<Trida\> - Ok, No content, Bad request
 Získat seznam tříd, které už byly ukončeny, podle úrovně vzdělání | GET | api/classes/ended{educationLevel} | List\<Trida\> - Ok, No content, Bad request
-Získat počet studentů v třídě dle id třídy | GET | api/classes/{id}/students/count | int - Ok, Not found, Bad request
-Získat seznam studentů, kterým už bylo 18 let, dle id třídy | GET | api/classes/{id}/students/adult | List\<Student\> - Ok, No content, Not found, Bad request
-Získat seznam studentů v dané třídě dle id třídy | GET | api/classes/{id}/students | List\<Student\> - Ok, No content, Not found, Bad request
+Získat počet studentů v třídě dle id třídy | GET | api/classes/{classId}/students/count | int - Ok, Not found, Bad request
+Získat seznam studentů, kterým už bylo 18 let, dle id třídy | GET | api/classes/{classId}/students/adult | List\<Student\> - Ok, No content, Not found, Bad request
+Získat seznam studentů v dané třídě dle id třídy | GET | api/classes/{classId}/students | List\<Student\> - Ok, No content, Not found, Bad request
 
 #### POST metoda ukázka
 ```
@@ -39,9 +39,9 @@ Získat seznam studentů v dané třídě dle id třídy | GET | api/classes/{id
 Akce | Metoda | Endpoint | Výsledek
 ---- | ------ | -------- | --------
 Vytvořit nového studenta | POST | api/students + body | Created, Bad Request
-Smazat studenta | DELETE | api/students/{pin} | No content, Not found
-Upravit studenta | PUT | api/students/{pin} + body | Ok, Not found, Bad request
-Získat studenta podle rodného čísla | GET | api/students/{pin} | Student - Ok, No content, Not found, Bad request
+Smazat studenta | DELETE | api/students/{studentId} | No content, Not found
+Upravit studenta | PUT | api/students/{studentId} + body | Ok, Not found, Bad request
+Získat studenta podle rodného čísla | GET | api/students/{studentId} | Student - Ok, No content, Not found, Bad request
 Získat studenty podle parametrů | GET | api/students[age?][gender?] | List\<Student\> - Ok, No content, Bad request
 
 #### POST metoda ukázka
