@@ -39,7 +39,7 @@ Získat seznam studentů v dané třídě dle id třídy | GET | api/classes/{cl
 Akce | Metoda | Endpoint | Výsledek
 ---- | ------ | -------- | --------
 Vytvořit nového studenta | POST | api/students + body | Created, Bad Request
-Smazat studenta | DELETE | api/students/{studentId} | No content, Not found
+Smazat studenta | DELETE | api/students/{studentId} | No content, Not found, Bad request
 Upravit studenta | PUT | api/students/{studentId} + body | Ok, Not found, Bad request
 Získat studenta podle rodného čísla | GET | api/students/{studentId} | Student - Ok, No content, Not found, Bad request
 Získat studenty podle parametrů | GET | api/students[age?][gender?] | List\<Student\> - Ok, No content, Bad request
