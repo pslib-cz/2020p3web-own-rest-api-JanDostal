@@ -1,6 +1,6 @@
 # 2020p3web-own-rest-api-JanDostal
 ## Schéma
-![Konceptuální model](plán/IMG_20210701_113127.jpg)
+![Konceptuální model](/plán/IMG_20210701_113127.jpg)
 ## Modely
 ### Třídy
 Akce | Metoda | Endpoint | Výsledek
