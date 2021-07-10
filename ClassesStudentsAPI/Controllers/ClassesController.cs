@@ -61,7 +61,7 @@ namespace ClassesStudentsAPI.Controllers
         {
             UrovenVzdelani? level = educationLevel;
 
-            Present = DateTime.Today;
+            Present = DateTime.Now;
 
             Tridy = await _context.Tridy.AsNoTracking().Where(x => x.UrovenVzdelani == educationLevel && (Present >= x.DatumUkonceni) == true).ToListAsync();
 
@@ -80,7 +80,7 @@ namespace ClassesStudentsAPI.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<IEnumerable<Trida>>> GetClasses(int? grade = null, UrovenVzdelani? educationLevel = null, string codeDesignation = null)
         {
-            Present = DateTime.Today;
+            Present = DateTime.Now;
 
             if (grade == null && educationLevel == null && codeDesignation == null)
             {
@@ -253,7 +253,7 @@ namespace ClassesStudentsAPI.Controllers
                 return NotFound();
             }
 
-            Present = DateTime.Today;
+            Present = DateTime.Now;
 
             var students = await _context.Studenti.AsNoTracking().ToArrayAsync();
             var adultStudents = new Collection<Student>();
@@ -262,7 +262,7 @@ namespace ClassesStudentsAPI.Controllers
             foreach (var item in students.AsEnumerable())
             {
                 int age = Present.Year - item.DatumNarozeni.Year;
-                if (item.DatumNarozeni.Date > Present.AddYears(-age))
+                if (item.DatumNarozeni > Present.AddYears(-age))
                 {
                     age--;
                 }

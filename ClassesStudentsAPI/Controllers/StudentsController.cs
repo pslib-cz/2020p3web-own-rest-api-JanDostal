@@ -66,7 +66,7 @@ namespace ClassesStudentsAPI.Controllers
             }
             else if (age != null && gender == null)
             {
-                Present = DateTime.Today;
+                Present = DateTime.Now;
 
                 var students = await _context.Studenti.AsNoTracking().ToArrayAsync();
                 var filteredStudents = new Collection<Student>();
@@ -75,8 +75,8 @@ namespace ClassesStudentsAPI.Controllers
                 {
                     int studentAge = Present.Year - item.DatumNarozeni.Year;
 
-                    if (item.DatumNarozeni.Date > Present.AddYears(-studentAge))
-                    {
+                    if (item.DatumNarozeni> Present.AddYears(-studentAge))
+                    {   
                         studentAge--;
                     }
 
@@ -93,7 +93,7 @@ namespace ClassesStudentsAPI.Controllers
             }
             else
             {
-                Present = DateTime.Today;
+                Present = DateTime.Now;
 
                 var students = await _context.Studenti.AsNoTracking().ToArrayAsync();
                 var filteredStudents = new Collection<Student>();
@@ -102,7 +102,7 @@ namespace ClassesStudentsAPI.Controllers
                 {
                     int studentAge = Present.Year - item.DatumNarozeni.Year;
 
-                    if (item.DatumNarozeni.Date > Present.AddYears(-studentAge))
+                    if (item.DatumNarozeni > Present.AddYears(-studentAge))
                     {
                         studentAge--;
                     }
